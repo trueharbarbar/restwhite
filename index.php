@@ -4,7 +4,7 @@
 // Получаем токен из URL (?token=...) или используем дефолтный
 $token = isset($_GET['token']) && !empty($_GET['token']) 
     ? $_GET['token'] 
-    : '3tVnbpbrWJhY8HNw';
+    : 'vtWtsDMb6H6xBC1w';
 
 require_once dirname(__FILE__) . '/kclient.php';
 
