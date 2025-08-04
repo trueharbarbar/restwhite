@@ -1,0 +1,198 @@
+/* frontend/base.css */
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1a202c; /* Default dark gray text color for readability */
+}
+
+/* Custom Scrollbar for aesthetic (optional, can be removed if not desired) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #065f46; /* emerald-700 */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #047857; /* emerald-600 */
+}
+
+/* Header/Navigation on Scroll */
+#navbar.scrolled {
+    background-color: rgba(6, 95, 70, 0.9); /* emerald-700 with opacity */
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Hero CTA Button */
+.btn-ghost-cta {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-ghost-cta:hover {
+    color: #065f46; /* emerald-700 */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Services Tabs */
+.tab-button.active {
+    background-color: #047857; /* emerald-600 */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tab-panel {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* FAQ Section - Details/Summary Icon */
+.faq-item summary .details-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-item[open] summary .details-icon {
+    transform: rotate(180deg);
+}
+
+/* Gallery Lightbox */
+#lightbox {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#lightbox.show {
+    opacity: 1;
+    display: flex;
+}
+
+#lightbox-img.show {
+    opacity: 1;
+}
+
+/* Cookie Banner */
+#cookie-banner.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Cookie Modal */
+#cookie-modal.show {
+    opacity: 1;
+    display: flex;
+}
+
+#cookie-modal.show > div {
+    transform: scale(1);
+    opacity: 1;
+}
+/* frontend/base.css */
+
+/*
+    IMPORTANT: This output contains only the NEW styles requested.
+    It should be appended to or integrated with your existing CSS.
+*/
+
+/* Parent container for content, providing overall padding */
+.complianceVaultNode {
+    padding-top: 4rem; /* Top padding for the content section */
+    padding-left: 1.5rem; /* Left padding for the content section */
+    padding-right: 1.5rem; /* Right padding for the content section */
+    margin-left: auto; /* Center the block if a max-width is applied elsewhere */
+    margin-right: auto; /* Center the block if a max-width is applied elsewhere */
+    max-width: 1200px; /* Optional: Constrain content width for better readability on large screens */
+}
+
+/* Heading 1 styles */
+.complianceVaultNode h1 {
+    font-size: 2.5rem; /* Large but not excessively huge */
+    line-height: 1.2; /* Tighter line height for headings */
+    margin-top: 2rem; /* Space above the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+    font-weight: 700; /* Bold font weight */
+    color: #1a202c; /* Dark text color */
+}
+
+/* Heading 2 styles */
+.complianceVaultNode h2 {
+    font-size: 2rem; /* Slightly smaller than h1 */
+    line-height: 1.25;
+    margin-top: 1.8rem;
+    margin-bottom: 0.9rem;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+/* Heading 3 styles */
+.complianceVaultNode h3 {
+    font-size: 1.75rem; /* Medium-large heading */
+    line-height: 1.3;
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600; /* Semi-bold */
+    color: #1a202c;
+}
+
+/* Heading 4 styles */
+.complianceVaultNode h4 {
+    font-size: 1.5rem; /* Medium heading */
+    line-height: 1.35;
+    margin-top: 1.4rem;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+/* Heading 5 styles */
+.complianceVaultNode h5 {
+    font-size: 1.25rem; /* Smallest heading */
+    line-height: 1.4;
+    margin-top: 1.2rem;
+    margin-bottom: 0.6rem;
+    font-weight: 500; /* Medium weight */
+    color: #1a202c;
+}
+
+/* Paragraph styles */
+.complianceVaultNode p {
+    font-size: 1.125rem; /* Slightly larger body text for readability (18px) */
+    line-height: 1.7; /* Generous line height for good readability */
+    margin-bottom: 1rem; /* Space between paragraphs */
+    color: #4a5568; /* Slightly lighter gray for body text */
+}
+
+/* Unordered list styles */
+.complianceVaultNode ul {
+    list-style-type: disc; /* Default disc bullet points */
+    margin-top: 1rem; /* Space above the list */
+    margin-bottom: 1rem; /* Space below the list */
+    padding-left: 2rem; /* Indentation for bullet points */
+    color: #4a5568;
+}
+
+/* List item styles */
+.complianceVaultNode li {
+    font-size: 1.125rem; /* Inherit paragraph font size */
+    line-height: 1.6; /* Line height for list items */
+    margin-bottom: 0.6rem; /* Space between list items */
+}
+#navbar .flex {
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center  !important;
+}
+#contact a {
+    word-break: break-all;
+}
+#services .flex {
+    flex-wrap: wrap !important;
+}
